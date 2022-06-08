@@ -1,3 +1,4 @@
+
 import fetch from "node-fetch";
 const CEPS = [
     '62980000', '63960000', '62900000', '63800000',
@@ -16,9 +17,14 @@ async function getInformationCEP(CEP) {
 }
 
 function showInformationCEPs(CEPs) {
-    try { CEPs.map(async cep => { console.log(await getInformationCEP(cep)); }) }
+    console.time("time");
+    try { CEPs.map(async CEP => { console.log(await getInformationCEP(CEP)); }) }
     catch (error) { console.error(error); }
+    console.timeEnd("time");
 }
 
-showInformationCEPs(CEPS);
+ showInformationCEPs(CEPS);
+
+
+
 
