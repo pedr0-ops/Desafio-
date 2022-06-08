@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha --reporter spec",
     "start": "node index.js"
+    
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,6 @@
     "fs": "^0.0.1-security",
     "jshint": "^2.13.4",
     "mocha": "^10.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.2.5"
   }
 }
