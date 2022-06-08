@@ -1,8 +1,10 @@
 import fetch from "node-fetch";
-const CEPS = ['62980000', '63960000', '62900000', '63800000',
+const CEPS = [
+    '62980000', '63960000', '62900000', '63800000',
     '60025110', '62014102', '76870631', '53416420',
     '59084145', '60175551', '69104368', '51170901',
-    '73005522', '76876702', '11702160'];
+    '73005522', '76876702', '11702160'
+];
 
 async function getInformationCEP(CEP) {
     try {
@@ -21,9 +23,4 @@ function showInformationCEPs(CEPs) {
 }
 
 showInformationCEPs(CEPS);
-
-
-
-
-
 
