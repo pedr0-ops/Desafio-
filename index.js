@@ -16,10 +16,8 @@ async function getInformationCEP(CEP) {
 }
 
 function showInformationCEPs(CEPs) {
-    console.time("time");
     try { CEPs.map(async cep => { console.log(await getInformationCEP(cep)); }) }
     catch (error) { console.error(error); }
-    console.timeEnd("time");
 }
 
 showInformationCEPs(CEPS);
